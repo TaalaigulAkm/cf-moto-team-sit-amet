@@ -137,3 +137,46 @@ body {
 .hero__btn:hover img {
     transform: translateX(5px);
 }
+/* TEST */
+.test {  
+    min-height: 352px;
+    background: url("../media/test-img.webp");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+.test__wrapper {
+    text-align: center;
+}
+.test__title {
+    padding-top: 81px;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 130%;
+    color: #fff;
+}
+.test__desc {
+    padding-top: 19px;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 130%;
+    color: #fff;
+}
+.test__btn {
+    margin-top: 43px;
+    border-radius: 9px;
+    width: 175px;
+    height: 45px;
+    background: #037e8c;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.test__btn:hover {
+    background: #026a73;
+    transform: translateY(-2px);
+}
+/* TEST */
