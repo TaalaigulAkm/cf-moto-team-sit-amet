@@ -98,6 +98,7 @@ body {
 .hero__title {
     font-weight: 800;
     font-size: 64px;
+
     line-height: 125%;
     letter-spacing: 0.04em;
     color: #fff;
@@ -116,7 +117,7 @@ body {
     gap: 20px;
     padding: 15px 30px;
     border-radius: 9px;
-    width: 274px;
+    min-width: 200px;
     height: 55px;
     background: #037e8c;
     font-weight: 600;
