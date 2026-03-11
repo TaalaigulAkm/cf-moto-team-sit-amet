@@ -138,3 +138,24 @@ body {
 .hero__btn:hover img {
     transform: translateX(5px);
 }
+/* VIDEO */
+ .video {
+    background-image: url(../media/video-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 594px;
+ }
+.about__video {
+    display: flex;
+    justify-content: center;
+}
+.about__video > video{
+    width: 1078px;
+    height: 430px;
+    object-fit: cover;
+    border: 7px solid #fff;
+    border-radius: 22px;
+    margin-top: 82px;
+}
+/* VIDEO */
