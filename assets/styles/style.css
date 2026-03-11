@@ -140,11 +140,11 @@ body {
 }
 /* VIDEO */
  .video {
+    height: 594px;
     background-image: url(../media/video-bg.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 594px;
  }
 .about__video {
     display: flex;
