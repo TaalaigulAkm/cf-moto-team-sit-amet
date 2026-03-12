@@ -138,3 +138,126 @@ body {
 .hero__btn:hover img {
     transform: translateX(5px);
 }
+/* FAQ */
+
+.faq {
+    padding: 70px 0;
+    background-image: url(../media/faq-bg-left.webp), url(../media/faq-bg-right.webp);
+    background-position: left -310px bottom -240px, right -420px top -145px;
+    background-repeat: no-repeat, no-repeat;
+    overflow: hidden;
+}
+.faq__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    color: #121214;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.faq__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 140px;
+}
+.faq__list {
+    max-width: 600px;
+    width: 100%;
+}
+.faq__item {
+    border: 2px solid #848484;
+    border-radius: 2px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #121214;
+    background: #fff;
+    overflow: hidden;
+    transition: .3s;
+}
+.faq__item:hover {
+    border-color: #037e8c;
+}
+.faq__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    color: #121214;
+}
+.faq__arrow {
+    width: 22px;
+    height: 22px;
+    transition: .3s;
+}
+.faq__item[open] .faq__arrow {
+    transform: rotate(90deg);
+    color: #037E8C;
+}
+.faq__item[open] {
+    border-color: #037e8c;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+.faq__answer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 15px;
+    padding: 0 20px ;
+    line-height: 1.5;
+    color: #121214;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .7s;
+}
+.faq__item[open] .faq__answer {
+    padding: 0 20px 20px;
+    max-height: 300px;
+}
+.faq__contact {
+    max-width: 380px;
+    flex-shrink: 0;
+    text-align: center;
+}
+.faq__icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.faq__contact-title {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #121214;
+}
+.faq__contact-text {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #121214;
+}
+.faq__btn {
+    display: inline-block;
+    border-radius: 9px;
+    border: 1.50px solid #037e8c;
+    padding: 12px 28px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #037e8c;
+    background: #f4f4f4;
+    transition: .3s;
+}
+.faq__btn:hover {
+    background: #037e8c;
+    color: #fff;
+    transform: translateY(-1.5px);
+}
+
+/* FAQ */
