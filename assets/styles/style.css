@@ -237,3 +237,53 @@ body {
     transform: translateY(-7px);
 }
 /* TEAM */
+/* EXTRA */
+.extra {
+   margin-top: 170px;
+}
+.extra__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    color: #121214;
+    text-align:center;
+    margin-bottom:48px;
+}
+.extra__cards {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap:27px;
+    justify-content:center;
+}
+.extra__card {
+    width:303px;
+    height:309px;
+    border-radius:10px;
+    overflow:hidden;
+}
+.extra__card img {
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+.extra__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #037e8c;
+    height: 89px;
+    background:#eff1f2;
+    padding:20px 24px;
+}
+.extra__card:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: 0.5s ;
+}
+.extra__card:hover .extra__text {
+    background:#e0e4e8;
+    transition: 0.3s;
+}
+/* EXTRA */
