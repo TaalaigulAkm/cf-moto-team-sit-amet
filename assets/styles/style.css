@@ -205,6 +205,104 @@ body {
 }
   transform: translateX(5px);
 }
+.hero__btn:hover img {
+    transform: translateX(5px);
+}
+
+/* OFFERS */
+
+.offers {
+    padding: 80px 0;
+    background-image: url(../media/offers-bg-left.webp), url(../media/offers-bg-right.webp);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -30px -100px, calc(100% + 60px) 160px;
+    overflow: hidden;
+}
+.offers .container {
+    overflow: hidden;
+}
+.offers__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    color: #373737;
+    margin-bottom: 45px;
+}
+
+.offers__cards {
+    display: flex;
+    gap: 30px;
+}
+.offers__card {
+    display: flex;
+    width: 100%;
+    min-height: 333px;
+    gap: 30px;
+    max-width: 636px;
+    background-color: #f4f4f4;
+    border-radius: 9px;
+    background-image: url(../media/offers-bg-1.webp);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.offers__img {
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 9px;
+}
+.offers__content {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding-top: 26px;
+    padding-right: 15px;
+}
+.offers_card_title {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 139%;
+    color: #037e8c;
+}
+.offers__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 139%;
+    color: #037e8c;
+    margin-bottom: 12px;
+}
+.offers__text {
+    max-width: 288px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #373737;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.offers__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.50px solid #037e8c;
+    border-radius: 9px;
+    padding: 14px 45px;
+    width: fit-content;
+    background: #f4f4f4;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #037e8c;
+    cursor: pointer;
+    transition: .3s;
+}
+.offers__btn:hover {
+    background: #037e8c;
+    color: #fff;
+    transform: translateY(-1.5px);
+}
 /* FAQ */
 
 .faq {
