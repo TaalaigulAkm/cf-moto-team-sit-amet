@@ -1,82 +1,282 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CFMOTO</title>
-    <link rel="stylesheet" href="./assets/styles/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+  </head>
+  <body>
     <header class="header" id="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__logo">
-                    <a href="#">
-                        <img src="./assets/media/logo-cfmoto.webp" alt="CFMOTO">
-                    </a>
-                </div>
-                <nav class="header__nav">
-                    <ul class="header__menu">
-                        <li class="header__item">
-                            <a href="#routes">Маршруты</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#photo">Галерея</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#faq">Вопрос-ответ</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#contacts">Контакты</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#booking">Забронировать</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__contacts">
-                    <a href="tel:+79283332645" class="header__phone">
-                        <img src="./assets/media/phone.svg" alt="phone">
-                        +7 928 333 26 45
-                    </a>
-                    <button class="header__callback">Перезвоните мне</button>
-                </div>
-            </div>
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="#">
+              <img src="./assets/media/logo-cfmoto.webp" alt="CFMOTO" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__item">
+                <a href="#routes">Маршруты</a>
+              </li>
+              <li class="header__item">
+                <a href="#photo">Галерея</a>
+              </li>
+              <li class="header__item">
+                <a href="#faq">Вопрос-ответ</a>
+              </li>
+              <li class="header__item">
+                <a href="#contacts">Контакты</a>
+              </li>
+              <li class="header__item">
+                <a href="#booking">Забронировать</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__contacts">
+            <a href="tel:+79283332645" class="header__phone">
+              <img src="./assets/media/phone.svg" alt="phone" />
+              +7 928 333 26 45
+            </a>
+            <button class="header__callback">Перезвоните мне</button>
+          </div>
         </div>
+      </div>
     </header>
 
     <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__title">Экскурсии на квадроциклах в Геленджике</h1>
+            <p class="hero__desc">
+              приезжайте за новыми ощущениями и эмоциями!
+            </p>
+            <button class="hero__btn">
+              Подобрать маршрут
+              <img src="./assets/media/hero-arrow-right.webp" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </section>
 
-        <section class="hero">
-            <div class="container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Экскурсии на квадроциклах в Геленджике</h1>
-                    <p class="hero__desc">приезжайте за новыми ощущениями и эмоциями!</p>
-                    <button class="hero__btn">
-                        Подобрать маршрут
-                        <img src="./assets/media/hero-arrow-right.webp" alt="arrow">
-                    </button>
-                </div>
+      <section class="advantages" id="advantages">
+        <div class="container">
+          <div class="advantages__wrapper">
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <img
+                  class="icon__tree"
+                  src="./assets/media/tree.svg"
+                  alt="Tree icon"
+                />
+              </div>
+              <h3>Увлекательные экскурсии</h3>
+              <p>
+                Маршруты от лесных дорожек <br />
+                до полного бездорожья!
+              </p>
             </div>
-        </section>
 
-        <section class="advantages">
-            <div class="container">
-            
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <img
+                  class="icon__motobike"
+                  src="./assets/media/motorbike.svg"
+                  alt="Motorbike icon"
+                />
+              </div>
+              <h3>Надежная техника</h3>
+              <p>
+                18 квадроциклов всех японских <br />
+                брендов
+              </p>
             </div>
-        </section>
 
         <section class="routes" id="routes">
             <div class="container">
-            
+                    <h2 class="routes__title">Наши маршруты</h2>
+                    <div class="routes__list">
+                        <div class="routes__item">
+                        <div class="routes__content">
+                            <div class="routes__header">
+                                <h3 class="routes__name">БАЗОВЫЙ</h3>
+                                <p class="routes__price">от 4000 ₽</p>
+                            </div>
+                            <ul class="routes__features">
+                                <li>
+                                    <img src="./assets/media/bi_clock-fill.svg" alt="">
+                                    Время в пути: 1,5 - 2 часа
+                                </li>
+                                <li>
+                                    <img src="./assets/media/bx_bxs-map.svg" alt="">
+                                    Расстояние: 20 - 25 км
+                                </li>
+                                <li>
+                                    <img src="./assets/media/ant-design_star-filled.svg" alt="">
+                                    Сложность: 5***
+                                </li>
+                            </ul>
+                            <div class="routes__route">
+                                <p class="routes__route_title">
+                                    маршрут
+                                    <img src="./assets/media/icon-route.svg" alt="">
+                                </p>
+                                <p class="routes__route_text">
+                                    Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис - 
+                                    -Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
+                                    -Форсаж
+                                </p>
+                            </div>
+                            <div class="routes__buttons">
+                                <button class="routes__btn">Подробнее</button>
+                                <button class="routes__btn">Забронировать</button>
+                            </div>
+                        </div>
+                        <div class="routes__gallery">
+                            <div class="routes__slider">
+                                <div class="routes__track">
+                                    <img src="./assets/media/routes-track-1.webp" alt="">
+                                    <img src="./assets/media/routes-track-2.webp" alt="">
+                                    <img src="./assets/media/routes-track-3.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="routes__scroll">
+                                <img src="./assets/media/routes-scroll.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="routes__item">
+                        <div class="routes__gallery">
+                            <div class="routes__slider">
+                                <div class="routes__track">
+                                    <img src="./assets/media/routes-track-4.webp" alt="">
+                                    <img src="./assets/media/routes-track-5.webp" alt="">
+                                    <img src="./assets/media/routes-track-6.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="routes__scroll">
+                                <img src="./assets/media/routes-scroll.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="routes__content">
+                            <div class="routes__header">
+                                <h3 class="routes__name">РАСШИРЕННЫЙ</h3>
+                                <p class="routes__price">от 16000 ₽</p>
+                            </div>
+                            <ul class="routes__features">
+                                <li>
+                                    <img src="./assets/media/bi_clock-fill.svg" alt="">
+                                    Время в пути: 6 - 8 часов
+                                </li>
+                                <li>
+                                    <img src="./assets/media/bx_bxs-map.svg" alt="">
+                                    Расстояние: 60 - 70 км
+                                </li>
+                                <li>
+                                    <img src="./assets/media/ant-design_star-filled.svg" alt="">
+                                    Сложность: 5***
+                                </li>
+                            </ul>
+                            <div class="routes__route">
+                                <p class="routes__route_title">
+                                    маршрут
+                                    <img src="./assets/media/icon-route.svg" alt="">
+                                </p>
+                                <p class="routes__route_text">
+                                    Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис - 
+                                    -Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
+                                    -Форсаж
+                                </p>
+                            </div>
+                            <div class="routes__buttons">
+                                <button class="routes__btn">Подробнее</button>
+                                <button class="routes__btn">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="routes__item">
+                        <div class="routes__content">+
+                            <div class="routes__header">
+                                <h3 class="routes__name">Experience</h3>
+                                <p class="routes__price">от 7000 ₽</p>
+                            </div>
+                            <ul class="routes__features">
+                                <li>
+                                    <img src="./assets/media/bi_clock-fill.svg" alt="">
+                                    Время в пути: 4 часа
+                                </li>
+                                <li>
+                                    <img src="./assets/media/bx_bxs-map.svg" alt="">
+                                    Расстояние: 40 - 50 км
+                                </li>
+                                <li>
+                                    <img src="./assets/media/ant-design_star-filled.svg" alt="">
+                                    Сложность: 5***
+                                </li>
+                            </ul>
+                            <div class="routes__route">
+                                <p class="routes__route_title">
+                                    маршрут
+                                    <img src="./assets/media/icon-route.svg" alt="">
+                                </p>
+                                <p class="routes__route_text">
+                                    Форсаж - Голубая бухта – Заброшенная Тур База – Сухогруз Рио – 
+                                    - Форсаж
+                                </p>
+                            </div>
+                            <div class="routes__buttons">
+                                <button class="routes__btn">Подробнее</button>
+                                <button class="routes__btn">Забронировать</button>
+                            </div>
+                        </div>
+                        <div class="routes__gallery">
+                            <div class="routes__slider">
+                                <div class="routes__track">
+                                    <img src="./assets/media/routes-track-1.webp" alt="">
+                                    <img src="./assets/media/routes-track-2.webp" alt="">
+                                    <img src="./assets/media/routes-track-3.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="routes__scroll">
+                                <img src="./assets/media/routes-scroll.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <img
+                  class="icon__helmet"
+                  src="./assets/media/helmet.svg"
+                  alt="Helmet icon"
+                />
+              </div>
+              <h3>Экипировка бесплатно</h3>
+              <p>
+                Необходимая экипировка <br />
+                выдается бесплатно
+              </p>
             </div>
-        </section>
 
-        <section class="test">
-            <div class="container">
-            
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <img
+                  class="icon__people"
+                  src="./assets/media/instructor.svg"
+                  alt="Instructor icon"
+                />
+              </div>
+              <h3>Опытные инструктора</h3>
+              <p>
+                Обеспечат полную безопасность <br />
+                Вашего отдыха
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
         <section class="photo" id="photo">
             <div class="container">
@@ -95,55 +295,306 @@
                 </div>
             </div>
         </section>
+      <section class="routes" id="routes">
+        <div class="container"></div>
+      </section>
 
-        <section class="video" id="video">
-            <div class="container">
-            
-            </div>
-        </section>
+      <section class="test">
+        <div class="container"></div>
+      </section>
 
-        <section class="team" id="team">
-            <div class="container">
-            
-            </div>
-        </section>
+      <section class="photo" id="photo">
+        <div class="container"></div>
+      </section>
 
         <section class="conditions">
             <div class="container">
-            
+                <h2 class="conditions__title">Условия предоставления услуг</h2>
+                <ul class="conditions__cards">
+                    <li class="conditions__card">
+                        <img class="conditions__icon" src="./assets/media/conditions-icon.svg" alt="">
+                        <p class="conditions__text">При прокате или аренде строго соблюдать правила техники безопасности и все требования инструктора!</p>
+                    </li>
+                    <li class="conditions__card">
+                        <img class="conditions__icon" src="./assets/media/conditions-icon.svg" alt="">
+                        <p class="conditions__text">К управлению НЕ ДОПУСКАЮТСЯ лица младше 16 лет и лица в алкогольном опьянении!</p>
+                    </li>
+                    <li class="conditions__card">
+                        <img class="conditions__icon" src="./assets/media/conditions-icon.svg" alt="">
+                        <p class="conditions__text">Распивать спиртные напитки во время проката, аренды ЗАПРЕЩЕНО! (После? На ваше усмотрение)</p>
+                    </li>
+                    <li class="conditions__card">
+                        <img class="conditions__icon" src="./assets/media/conditions-icon.svg" alt="">
+                        <p class="conditions__text">Управление осуществляйте в меру своих сил и возможностей. Не переоценивайте себя! Это опасно!!!</p>
+                    </li>
+                    <li class="conditions__card">
+                        <img class="conditions__icon" src="./assets/media/conditions-icon.svg" alt="">
+                        <p class="conditions__text">Перед каждым катанием опытный инструктор научит Вас основам управления и будет сопровождать на протяжении всего маршрута.</p>
+                    </li>
+                    <li class="conditions__card">
+                        <img class="conditions__icon" src="./assets/media/conditions-icon.svg" alt="">
+                        <p class="conditions__text">При прокате или аренде строго соблюдать правила техники безопасности и все требования инструктора!</p>
+                    </li>
+                </ul>
             </div>
         </section>
+      <section class="video" id="video">
+        <div class="container"></div>
+      </section>
 
+      <section class="team" id="team">
+        <div class="container"></div>
+      </section>
+
+      <section class="conditions">
+        <div class="container"></div>
+      </section>
+
+      <section class="offers">
+        <div class="container"></div>
+      </section>
         <section class="offers">
             <div class="container">
-            
+              <h2 class="offers__title">Спецпредложения</h2>
+              <ul class="offers__cards">
+                <li class="offers__card">
+                  <img class="offers__img" src="./assets/media/offers-1.webp" alt="">
+                  <div class="offers__content">
+                    <h3 class="offers_card_title">Скидка 10%</h3>
+                    <p class="offers__subtitle">на День Рождение</p>
+                    <p class="offers__text">в честь Дня Рождения - дарим имениннику скидку 10%</p>
+                  </div>
+                </li>
+                <li class="offers__card">
+                  <img class="offers__img" src="./assets/media/offers-2.webp" alt="">
+                  <div class="offers__content">
+                    <h3 class="offers_card_title">Скидка 10%</h3>
+                    <p class="offers__text">клиентам Ex-Kuban на услуги Загородного клуба Ягода Малина</p>
+                    <button class="offers__btn">Подробнее</button>
+                  </div>
+                </li>
+              </ul>
             </div>
         </section>
 
         <section class="certificate">
             <div class="container">
-            
+              <div class="certificate__header">
+                <h2 class="certificate__title">Подарочный сертификат</h2>
+                <p class="certificate__subtitle">Хотите сделать оригинальный подарок? <br>Подарите незабываемые эмоции - лучший подарок!</p>
+              </div>
+              <div class="certificate__content">
+                <div class="certificate__text">
+                  <p>Хотите удивить своих близких оригинальным подарком? Подарочный сертификат на экскурсию на квадроциклах станет не просто интересным подарком, но и реальной возможностью приблизить Ваших друзей и близких к новому увлечению.</p>
+                    <a href="#" class="certificate__btn">Подберем сертификат для вас</a>
+                </div>
+                <div class="certificate__img">
+                  <img src="./assets/media/certificate-img.webp" alt="certificate">
+                </div>
+              </div>
             </div>
         </section>
 
         <section class="faq" id="faq">
             <div class="container">
-            
+              <h2 class="faq__title">Вопросы-ответы</h2>
+              <div class="faq__content">
+                <div class="faq__list">
+                  
+                  <details class="faq__item">
+                    <summary class="faq__question">
+                      Актуальный вопрос?
+                      <svg class="faq__arrow" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.69 10.3963L6.51432 0.248783C6.18093 -0.0834926 5.64116 -0.082934 5.30832 0.250502C4.97574 0.583895 4.9766 1.12397 5.31004 1.4565L14.88 11L5.3097 20.5435C4.9763 20.8761 4.97544 21.4158 5.30798 21.7493C5.47482 21.9164 5.69341 22 5.91199 22C6.13001 22 6.34773 21.917 6.51428 21.751L16.69 11.6037C16.8505 11.444 16.9406 11.2266 16.9406 11C16.9406 10.7735 16.8503 10.5563 16.69 10.3963Z" fill="#121214" />
+                      </svg>
+                    </summary>
+                    <p class="faq__answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>        
+                  </details>
+
+                  <details class="faq__item">
+                    <summary class="faq__question">
+                      Актуальный вопрос?
+                      <svg class="faq__arrow" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.69 10.3963L6.51432 0.248783C6.18093 -0.0834926 5.64116 -0.082934 5.30832 0.250502C4.97574 0.583895 4.9766 1.12397 5.31004 1.4565L14.88 11L5.3097 20.5435C4.9763 20.8761 4.97544 21.4158 5.30798 21.7493C5.47482 21.9164 5.69341 22 5.91199 22C6.13001 22 6.34773 21.917 6.51428 21.751L16.69 11.6037C16.8505 11.444 16.9406 11.2266 16.9406 11C16.9406 10.7735 16.8503 10.5563 16.69 10.3963Z" fill="#121214" />
+                      </svg>
+                    </summary>
+                    <p class="faq__answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>        
+                  </details>
+                  
+
+                  <details class="faq__item">
+                    <summary class="faq__question">
+                      Актуальный вопрос?
+                      <svg class="faq__arrow" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.69 10.3963L6.51432 0.248783C6.18093 -0.0834926 5.64116 -0.082934 5.30832 0.250502C4.97574 0.583895 4.9766 1.12397 5.31004 1.4565L14.88 11L5.3097 20.5435C4.9763 20.8761 4.97544 21.4158 5.30798 21.7493C5.47482 21.9164 5.69341 22 5.91199 22C6.13001 22 6.34773 21.917 6.51428 21.751L16.69 11.6037C16.8505 11.444 16.9406 11.2266 16.9406 11C16.9406 10.7735 16.8503 10.5563 16.69 10.3963Z" fill="#121214" />
+                      </svg>
+                    </summary>
+                    <p class="faq__answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  </details>
+                  
+
+                  <details class="faq__item">
+                    <summary class="faq__question">
+                      Актуальный вопрос?
+                      <svg class="faq__arrow" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.69 10.3963L6.51432 0.248783C6.18093 -0.0834926 5.64116 -0.082934 5.30832 0.250502C4.97574 0.583895 4.9766 1.12397 5.31004 1.4565L14.88 11L5.3097 20.5435C4.9763 20.8761 4.97544 21.4158 5.30798 21.7493C5.47482 21.9164 5.69341 22 5.91199 22C6.13001 22 6.34773 21.917 6.51428 21.751L16.69 11.6037C16.8505 11.444 16.9406 11.2266 16.9406 11C16.9406 10.7735 16.8503 10.5563 16.69 10.3963Z" fill="#121214" />
+                      </svg>
+                    </summary>
+                    <p class="faq__answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>        
+                  </details>
+                  
+                </div>
+                <div class="faq__contact">
+                  <div class="faq__icon">
+                    <img src="./assets/media/faq-icon.svg" alt="">
+                  </div>
+                  <h3 class="faq__contact-title">Есть вопросы?</h3>
+                  <p class="faq__contact-text">
+                    Не стесняйтесь обращаться к нам, <br>если у вас есть какие-либо вопросы, предложения <br>или идеи для сотрудничества
+                  </p>
+                  <a href="#" class="faq__btn">Задать вопрос</a>
+                </div>
+              </div>
             </div>
         </section>
 
-        <section class="extra">
-            <div class="container">
-            
-            </div>
-        </section>
+      <section class="certificate">
+        <div class="container"></div>
+      </section>
 
+      <section class="faq" id="faq">
+        <div class="container"></div>
+      </section>
+
+      <section class="extra">
+        <div class="container"></div>
+      </section>
     </main>
 
     <footer class="footer">
+      <div class="container"></div>
+    </footer>
+  </body>
+</html>
         <div class="container">
+            <div class="footer__top">
+            
+                <div class="footer__content">
+                    <div class="footer__contact">
+                <h2>Контакты</h2>
+                <div class="footer__contact__list">
+                    <div class="footer__contact__item">
+                    <div class="footer__icon">
+                        <!-- фон -->
+                        <svg class="icon__bg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22.5" cy="22.5" r="22.5" fill="#037E8C" />
+                        </svg>
+                        <!-- иконка -->
+                        <svg class="icon__img"  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_23_2933)">
+                            <path d="M22.4259 9.95899C22.4252 9.95846 22.4247 9.95776 22.4241 9.95723L13.0419 0.575387C12.642 0.175301 12.1103 -0.0449219 11.5448 -0.0449219C10.9792 -0.0449219 10.4475 0.175301 10.0474 0.575387L0.670145 9.9525C0.666986 9.95566 0.663652 9.95899 0.660669 9.96215C-0.16056 10.7881 -0.159156 12.1282 0.664705 12.9521C1.0411 13.3287 1.53805 13.5466 2.06957 13.5696C2.09133 13.5717 2.11309 13.5728 2.13502 13.5728H2.50879V20.477C2.50879 21.8435 3.62061 22.9551 4.98704 22.9551H8.65766C9.02984 22.9551 9.33148 22.6533 9.33148 22.2813V16.8682C9.33148 16.2447 9.83879 15.7376 10.4623 15.7376H12.6273C13.2508 15.7376 13.7579 16.2447 13.7579 16.8682V22.2813C13.7579 22.6533 14.0595 22.9551 14.4317 22.9551H18.1023C19.4689 22.9551 20.5806 21.8435 20.5806 20.477V13.5728H20.9273C21.4927 13.5728 22.0244 13.3525 22.4247 12.9523C23.2494 12.1272 23.2497 10.7846 22.4259 9.95899ZM21.4716 11.9994C21.3262 12.1449 21.1328 12.2251 20.9273 12.2251H19.9067C19.5346 12.2251 19.2329 12.5267 19.2329 12.8989V20.477C19.2329 21.1003 18.7258 21.6075 18.1023 21.6075H15.1055V16.8682C15.1055 15.5018 13.9939 14.3899 12.6273 14.3899H10.4623C9.09564 14.3899 7.98383 15.5018 7.98383 16.8682V21.6075H4.98704C4.36375 21.6075 3.85645 21.1003 3.85645 20.477V12.8989C3.85645 12.5267 3.5548 12.2251 3.18262 12.2251H2.17959C2.16906 12.2244 2.15871 12.2239 2.14801 12.2237C1.94726 12.2202 1.75898 12.1405 1.61789 11.9993C1.31783 11.6992 1.31783 11.2108 1.61789 10.9106C1.61807 10.9106 1.61807 10.9104 1.61824 10.9102L1.61877 10.9097L11.0006 1.52822C11.1459 1.38275 11.3391 1.30274 11.5448 1.30274C11.7503 1.30274 11.9435 1.38275 12.0889 1.52822L21.4687 10.9078C21.4701 10.9092 21.4716 10.9106 21.473 10.912C21.7715 11.2126 21.771 11.6999 21.4716 11.9994Z" fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_23_2933">
+                            <rect width="23" height="23" fill="white" />
+                            </clipPath>
+                        </defs>
+                        </svg>
+                    </div>
+                    <p class="footer__text">Город Геленджик</p>
+                </div>
+                <div class="footer__contact__item">
+                    <div class="footer__icon">
+                        <!-- фон -->
+                        <svg class="icon__bg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22.5" cy="22.5" r="22.5" fill="#037E8C" />
+                        </svg>
+                        <!-- иконка -->
+                        <svg class="icon__img"  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.53 23C15.7876 23 15.0514 22.8687 14.3316 22.6072C11.1603 21.4552 8.21671 19.5789 5.81888 17.1811C3.42104 14.7833 1.54474 11.8397 0.392761 8.6684C0.0225752 7.64925 -0.0866704 6.59723 0.068169 5.54143C0.213216 4.55247 0.596294 3.59239 1.17603 2.76496C1.75833 1.9339 2.53464 1.24267 3.421 0.766021C4.36621 0.257751 5.39789 0 6.48747 0C6.82634 0 7.11922 0.236774 7.19024 0.568104L8.31836 5.83269C8.36944 6.07108 8.29617 6.31913 8.12381 6.49153L6.19616 8.41914C8.01461 12.0346 10.9653 14.9853 14.5808 16.8037L16.5084 14.8761C16.6808 14.7037 16.9289 14.6305 17.1672 14.6815L22.4318 15.8097C22.7632 15.8807 22.9999 16.1735 22.9999 16.5124C22.9999 17.602 22.7421 18.6337 22.2338 19.5789C21.7572 20.4653 21.0659 21.2416 20.2349 21.8239C19.4075 22.4036 18.4474 22.7867 17.4584 22.9318C17.1485 22.9773 16.8387 23 16.53 23V23ZM5.91321 1.46889C4.47599 1.62754 3.20035 2.38085 2.35325 3.58987C1.40068 4.94938 1.17855 6.62153 1.74382 8.17765C3.95856 14.2745 8.72552 19.0414 14.8223 21.2562C16.3784 21.8214 18.0506 21.5993 19.4101 20.6467C20.6191 19.7996 21.3724 18.524 21.5311 17.0868L17.2484 16.1691L15.2352 18.1822C15.021 18.3964 14.6955 18.4533 14.4214 18.3245C10.1455 16.3157 6.68431 12.8545 4.67548 8.57856C4.5467 8.30441 4.60356 7.97892 4.81779 7.76474L6.83092 5.75161L5.91321 1.46889Z" fill="white" />
+                        </svg>
+                    </div>
+                    <p class="footer__text">+7 928 428-00-62</p>
+                </div>
+                <div class="footer__contact__item">
+  
+                    <div class="footer__icon">
+                        <!-- фон -->
+                        <svg class="icon__bg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22.5" cy="22.5" r="22.5" fill="#037E8C" />
+                        </svg>
+                        <!-- иконка -->
+                        <svg class="icon__img"  viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.8027 2.97852H2.19727C0.987207 2.97852 0 3.96465 0 5.17578V19.8242C0 21.0312 0.982813 22.0215 2.19727 22.0215H22.8027C24.0098 22.0215 25 21.0387 25 19.8242V5.17578C25 3.96875 24.0172 2.97852 22.8027 2.97852ZM22.4993 4.44336L12.5466 14.3961L2.50776 4.44336H22.4993ZM1.46484 19.5209V5.47212L8.51948 12.4663L1.46484 19.5209ZM2.50063 20.5566L9.55972 13.4976L12.0332 15.9498C12.3195 16.2337 12.7816 16.2328 13.0667 15.9476L15.4785 13.5358L22.4994 20.5566H2.50063ZM23.5352 19.5208L16.5143 12.5L23.5352 5.4791V19.5208Z" fill="white" />
+                        </svg>
+                    </div>
+                    <p class="footer__text">experience@groupgrand.ru</p>
+                </div>
+                <div class="footer__contact__item">
+                    <div class="footer__icon">
+                        <!-- фон -->
+                        <svg class="icon__bg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22.5" cy="22.5" r="22.5" fill="#037E8C" />
+                        </svg>
+                        <!-- иконка -->
+                        <svg class="icon__img"  viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 26.5832C21.9036 26.5832 27.5 21.1733 27.5 14.4998C27.5 7.8264 21.9036 2.4165 15 2.4165C8.09644 2.4165 2.5 7.8264 2.5 14.4998C2.5 21.1733 8.09644 26.5832 15 26.5832Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M18.75 19.3333L15.7325 16.4164C15.2636 15.9633 15.0001 15.3487 15 14.7078V7.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <p class="footer__text">Пн - Пт: 9:00 - 18:00<br>
+                Сб: 9:00 - 17:00<br>
+                Вс - выходной</p>
+                </div>
+                </div>
+                
+                <div class="footer__socials">
+                    <h3>Написать нам:</h3>
+                    <div class="socials">
+                        <a href="#" class="social">
+                            <img src="./assets/media/whatsap.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="./assets/media/instagram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__map">
+                <img src="./assets/media/footer-map.webp" alt="map">
+            </div>
+            </div>
+        
+            </div>
+            <div class="footer__bottom">
+            
+                <div class="footer__bottom__top">
+                    <div class="footer__nav__wrapper">
+                        <div class="footer__logo">
+                    <img src="./assets/media/footer-logo.webp" alt="logo">
+                </div>
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="#">Маршруты</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Вопрос-Ответ</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">УСЛОВИЯ</a></li>
+                        <li><a href="#">СПЕЦПРЕДЛОЖЕНИЯ</a></li>
+                    </ul>
+                </nav>
+                </div>
+                    </div>
+            
             
         </div>
+        <p class="footer__copy">
+        © CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат квадроциклов в Геленджике
+    </p>
+        </div>
     </footer>
+    
 </body>
 </html>
+
+
