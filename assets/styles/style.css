@@ -207,8 +207,6 @@ body {
     max-width: 636px;
     width: 100%;
 }
-  transform: translateX(5px);
-}
 .hero__btn:hover img {
     transform: translateX(5px);
 }
