@@ -14,7 +14,98 @@
         overflow-x: hidden;
     }
     .header__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .header__burger {
+        display: flex;
+        position: relative;
+        z-index: 30;
+    }
+    .header__nav {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        /* background: #fff; */
+        background: rgba(18, 18, 20, 0.8);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        /* transition: .4s; */
+        transition: top .4s cubic-bezier(0.77, 0, 0.175, 1), opacity .3s;
+        padding: 120px 20px;
+        z-index: 20;
+    }
+    .header__nav.active {
+        top: 0;
+    }
+    .header__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header__menu li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 10px 0;
+        opacity: 0;
+        transform: translateX(20px);
+        transition: all .5s ease;
+    }
+    .header__nav.active .header__menu li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .header__nav.active .header__menu li:nth-child(1) {
+        transition-delay: .1s;
+    }
+    .header__nav.active .header__menu li:nth-child(2) {
+        transition-delay: .2s;
+    }
+    .header__nav.active .header__menu li:nth-child(3) {
+        transition-delay: .3s;
+    }
+    .header__nav.active .header__menu li:nth-child(4) {
+        transition-delay: .4s;
+    }
+    .header__nav.active .header__menu li:nth-child(5) {
+        transition-delay: .5s;
+    }
+    
+    .header__contacts {
         display: none;
+    }
+    .header__mobile__contact {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .header__phone {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 105%;
+        letter-spacing: 0.02em;
+        color: #fff;
+    }
+    .header__callback__mobile {
+        border-radius: 9px;
+        width: 177px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.4);
+        /* background: linear-gradient(135deg, #ffffff, #dcdcdc); */
+    }
+    /* .header__callback__mobile:hover {
+        background: #037e8c;
+    } */
+    .header__callback__mobile.active {
+        transform: scale(0.97);
+        transition: .2s;
+        background: #037e8c;
+    }
+    .header__menu a:active {
+        opcity:0.6
     }
     .hero {
         height: auto;
@@ -208,6 +299,9 @@
     }
     .footer__nav__wrapper {
         justify-content: center;
+    }
+    .modal__content {
+        max-width: 500px;
     }
 }
 @media (max-width: 480px) {
