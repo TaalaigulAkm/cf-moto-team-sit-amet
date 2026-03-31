@@ -37,9 +37,13 @@
         transition: top .4s cubic-bezier(0.77, 0, 0.175, 1), opacity .3s;
         padding: 120px 20px;
         z-index: 20;
+        opacity: 0;
+        pointer-events: none;
     }
     .header__nav.active {
         top: 0;
+        opacity: 1;
+        pointer-events: auto;
     }
     .header__menu {
         display: flex;
@@ -125,17 +129,23 @@
         margin: 40px 0;
     }
     .hero__title {
-        font-size: 28px;
+        font-size: 36px;
+    }
+    .hero__desc {
+        font-size: 16px;
+        line-height: 130%;
+        max-width: 228px;
     }
     .advantages__wrapper {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
     .advantages__item h3 {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 120%;
     }
     .advantages__item p {
-        font-size: 12px;
+        font-size: 14px;
     }
     .routes {
         width: 100%;
@@ -202,11 +212,29 @@
         height: auto;
         scroll-snap-align: start;
     }
-    
+    .test__title {
+        font-size: 24px;
+    }
+    .test__desc {
+        font-size: 16px;
+        line-height: 120%;
+    }
+    .photo__title {
+        font-size: 24px;
+    }
     .about__video > video {
         width: 100%;
         height: auto;
         margin-top: 40px;
+    }
+    .team__title {
+        font-size: 24px;
+    }
+    .team__name {
+        font-size: 18px;
+    }
+    .team__job {
+        font-size: 14px;
     }
     .team__cards {
         grid-template-columns: 1fr 1fr;
@@ -219,9 +247,32 @@
     .team::before, .team::after {
         display: none;
     }
+    .conditions__title {
+        font-size: 24px;
+    }
+    .conditions__text {
+        line-height: 120%;
+    }
     .conditions__cards {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    .offers {
+        padding: 40px 0;
+    }
+    .offers__title {
+        font-size: 24px;
+
+    }
+    .offers_card_title {
+        font-size: 24px;
+    }
+    .offers__subtitle {
+        font-size: 18px;
+    }
+    .offers__text {
+        font-size: 16px;
+        line-height: 120%;
     }
     .offers__cards {
         flex-direction: column;
@@ -229,11 +280,28 @@
     .offers__card {
         flex-direction: column;
     }
+    .offers__content {
+        margin-left: 30px;
+    }
     .offers__img, .offers__content {
         width: 100%;
     }
     .offers__img {
         height: 200px;
+    }
+    .offers__btn {
+        margin-bottom: 10px;
+    }
+    .certificate__title {
+        font-size: 24px;
+    }
+    .certificate__subtitle {
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .certificate__text {
+        font-size: 14px;
+        line-height: 150%;
     }
     .certificate__content {
         flex-direction: column;
@@ -258,11 +326,22 @@
     .certificate__text {
         font-size: 14px;
     }
+    .faq__title {
+        font-size: 20px;
+    }
+    .faq__contact-title {
+        font-size: 20px;
+    }
+    .faq__contact-text {
+        /* font-size: 14px; */
+        /* max-width: 357px; */
+    }
     .extra__title {
         font-size: 24px;
     }
     .extra__text {
         font-size: 14px;
+        line-height: 120%;
     }
     .extra__cards {
         grid-template-columns: 1fr 1fr;
@@ -273,15 +352,33 @@
     }
     .footer__top .container {
         flex-direction: column;
-        gap: 30px;
+        gap: 17px;
     }
     .footer__content {
         flex-direction: column;
-        gap: 30px;
+        gap: 17px;
+    }
+    .footer__contact h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .footer__contact__item p {
+        font-size: 16px;
+    }
+    .footer__socials {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .socials {
+        gap: 10px;
+    }
+    .footer__socials h3 {
+        font-size: 18px;
     }
     .footer__contact__list {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 10px;
     }
     .footer__nav {
         display: flex;
@@ -306,7 +403,7 @@
 }
 @media (max-width: 480px) {
     .extra__cards {
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
     }
     .advantages__wrapper {
         grid-template-columns: 1fr;

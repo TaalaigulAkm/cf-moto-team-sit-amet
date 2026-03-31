@@ -14,7 +14,7 @@ body.lock {
   padding: 0 20px;
 }
 section {
-    /* outline: 4px solid red; */
+    outline: 4px solid red;
 }
 .header {
   position: absolute;
@@ -57,6 +57,9 @@ section {
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
+}
+.header__mobile__contact {
+  display: none;
 }
 .header__phone {
   display: flex;
@@ -203,7 +206,7 @@ section {
 /* CERTIFICATE */
 
 .certificate {
-    padding: 100px 0;
+    padding: 50px 0 80px;
     background-image: url(../media/certificate-bg.webp);
     background-position: center;
     background-size: cover;
@@ -271,7 +274,7 @@ section {
 /* OFFERS */
 
 .offers {
-    padding: 80px 0;
+    padding: 70px 0;
     background-image: url(../media/offers-bg-left.webp), url(../media/offers-bg-right.webp);
     background-repeat: no-repeat, no-repeat;
     background-position: -30px -100px, calc(100% + 60px) 160px;
@@ -549,7 +552,7 @@ section {
     text-align: center;
 }
 .test__title {
-    padding-top: 81px;
+    /* padding-top: 81px; */
     font-weight: 700;
     font-size: 37px;
     line-height: 130%;
@@ -592,16 +595,19 @@ section {
 .about__video {
     display: flex;
     justify-content: center;
+    /* align-items: center; */
+    height: 340px;
+    /* background: red; */
 }
 .about__video > video{
     /* width: 1078px; */
-    max-width: 100%;
+    width: 100%;
     /* height: 430px; */
-    height: auto;
+    height: 100%;
     object-fit: cover;
     border: 7px solid #fff;
     border-radius: 22px;
-    margin-top: 82px;
+    /* margin-top: 82px; */
 }
 /* VIDEO */
 /* TEAM */
@@ -666,7 +672,7 @@ section {
     background: #f3eeee;
     /* border-radius: 9px; */
     height: 103px;
-    padding-left: 26px;
+    padding-left: 5px;
     padding-top: 20px;
     border: none;
 }
@@ -714,7 +720,7 @@ section {
     height: auto;
     border-radius:10px;
     overflow:hidden;
-    background: #fff;
+    background: #ededed;
 }
 .extra__card img {
   /* border-radius: 10px 10px 0 0; */
@@ -746,7 +752,7 @@ section {
 /* EXTRA */
 /* SECTION PHOTO */
 .photo {
-    padding: 60px 0;
+    padding: 32px 0;
 }
 .photo__title {
     font-weight: 700;
@@ -804,6 +810,7 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* overflow: hidden; */
 }    
 .conditions__title {
     max-width: 500px;
@@ -916,6 +923,11 @@ section {
     transition:0.3s;
 }
 /* ADVANTAGES */
+
+/* FAQ */
+.faq {
+  padding: 75p 0;
+}
 .faq__title {
   font-weight: 700;
   font-size: 36px;
@@ -1084,6 +1096,10 @@ section {
 .footer__contact__item p {
   margin: 0;
   transition: color 0.3s;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 124%;
+  color: #121214;
 }
 .footer__contact__item:hover p {
   color: #037e8c;
