@@ -14,7 +14,7 @@ body.lock {
   padding: 0 20px;
 }
 section {
-    outline: 4px solid red;
+    /* outline: 4px solid red; */
 }
 .header {
   position: absolute;
@@ -1089,6 +1089,8 @@ section {
   gap: 16px;
   margin-bottom: 20px;
   transition: transform 0.3s;
+  text-decoration: none;
+  color: inherit;
 }
 .footer__contact__item:hover {
   transform: translateX(6px);
@@ -1301,3 +1303,19 @@ input.error-input {
 }
 
 /* MODAL */
+
+/* MODAL INFO */
+
+/* .modal__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.modal__features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+} */
+
+/* MODAL INFO */

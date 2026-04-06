@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="pageTitle">CFMOTO — Экскурсия</title>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/tour.css" />
+  </head>
+  <body>
+    <main>
+
+      <!-- Информация о туре + галерея -->
+      <section class="tour-hero">
+        <div class="container">
+          <div class="tour-hero__wrapper">
+            <div class="tour-hero__info">
+              <h1 class="tour-hero__title" id="tourTitle"></h1>
+              <ul class="tour-hero__features">
+                <li class="tour-hero__feature">
+                  <img src="./assets/media/bi_clock-fill.svg" alt="">
+                  <p>ВРЕМЯ В ПУТИ: <b id="tourTime"></b></p>
+                </li>
+                <li class="tour-hero__feature">
+                  <img src="./assets/media/bx_bxs-map.svg" alt="">
+                  <p>РАССТОЯНИЕ: <b id="tourDistance"></b></p>
+                </li>
+                <li class="tour-hero__feature">
+                  <img src="./assets/media/ant-design_star-filled.svg" alt="">
+                  <p>СЛОЖНОСТЬ: <b id="tourDifficulty"></b></p>
+                </li>
+              </ul>
+              <div class="tour-hero__route">
+                <p class="tour-hero__route-title">
+                  МАРШРУТ
+                  <img src="./assets/media/icon-route.svg" alt="">
+                </p>
+                <p class="tour-hero__route-text" id="tourRoute"></p>
+              </div>
+              <button class="tour-hero__btn">Схема маршрута</button>
+            </div>
+            <div class="tour-hero__gallery">
+              <div class="tour-hero__slider" id="tourSlider">
+                <div class="tour-hero__track" id="tourTrack"></div>
+              </div>
+              <div class="tour-hero__slider-footer">
+                <div class="tour-hero__dots" id="tourDots"></div>
+                <div class="tour-hero__scroll">
+                  <span>scroll</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Описание маршрута -->
+      <section class="tour-desc">
+        <div class="container">
+          <h2 class="tour-desc__title">Что посмотрим на маршруте:</h2>
+          <div class="tour-desc__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue lacus lacus facilisis orci nibh diam. Nisi, a et sit commodo. Pretium sed consectetur risus elementum, habitasse turpis massa.</p>
+            <p>In sit mi aenean volutpat. Quis lectus nunc nam euismod ultrices aenean. Vitae venenatis ut praesent neque sed quam mauris elementum. Risus blandit leo ut nullam egestas et porta. Ut lacus arcu sagittis sit. Gravida et faucibus id tortor augue interdum quam sit diam. Laoreet nulla at et arcu pellentesque massa placerat elit. Adipiscing in nullam ipsum est. In sit mi aenean volutpat. Quis lectus nunc nam euismod ultrices aenean. Vitae venenatis ut praesent neque sed quam mauris elementum. Risus blandit leo ut nullam egestas et porta. Ut lacus arcu sagittis sit.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Стоимость по квадроциклам -->
+      <section class="tour-prices">
+        <div class="container">
+          <h2 class="tour-prices__title">Стоимость экскурсии за 1 квадроцикл:</h2>
+          <div class="tour-prices__grid" id="tourPricesGrid"></div>
+        </div>
+      </section>
+
+      <!-- Бронирование -->
+      <section class="tour-booking" id="booking">
+        <div class="container">
+          <h2 class="tour-booking__title">Бронирование онлайн</h2>
+          <form class="tour-booking__form" id="tourBookingForm" novalidate>
+            <div class="tour-booking__row">
+              <div class="tour-booking__field">
+                <label class="tour-booking__label" for="tourDate">Желаемая дата</label>
+                <div class="tour-booking__input-wrap">
+                  <svg class="tour-booking__icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="4" width="16" height="14" rx="2" stroke="#787878" stroke-width="1.5"/>
+                    <path d="M2 8h16" stroke="#787878" stroke-width="1.5"/>
+                    <path d="M6 2v4M14 2v4" stroke="#787878" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <input type="date" class="tour-booking__input" id="tourDate">
+                </div>
+              </div>
+              <div class="tour-booking__field">
+                <label class="tour-booking__label">Количество человек</label>
+                <div class="tour-booking__counter">
+                  <button type="button" class="tour-booking__counter-btn" id="counterInc">+</button>
+                  <span class="tour-booking__counter-val" id="counterVal">3</span>
+                  <button type="button" class="tour-booking__counter-btn" id="counterDec">−</button>
+                </div>
+              </div>
+            </div>
+            <div class="tour-booking__row">
+              <div class="tour-booking__field">
+                <label class="tour-booking__label" for="tourPhone">Телефон или WhatsApp</label>
+                <div class="tour-booking__input-wrap">
+                  <svg class="tour-booking__icon" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.53 23C15.7876 23 15.0514 22.8687 14.3316 22.6072C11.1603 21.4552 8.21671 19.5789 5.81888 17.1811C3.42104 14.7833 1.54474 11.8397 0.392761 8.6684C0.0225752 7.64925 -0.0866704 6.59723 0.068169 5.54143C0.213216 4.55247 0.596294 3.59239 1.17603 2.76496C1.75833 1.9339 2.53464 1.24267 3.421 0.766021C4.36621 0.257751 5.39789 0 6.48747 0C6.82634 0 7.11922 0.236774 7.19024 0.568104L8.31836 5.83269C8.36944 6.07108 8.29617 6.31913 8.12381 6.49153L6.19616 8.41914C8.01461 12.0346 10.9653 14.9853 14.5808 16.8037L16.5084 14.8761C16.6808 14.7037 16.9289 14.6305 17.1672 14.6815L22.4318 15.8097C22.7632 15.8807 22.9999 16.1735 22.9999 16.5124C22.9999 17.602 22.7421 18.6337 22.2338 19.5789C21.7572 20.4653 21.0659 21.2416 20.2349 21.8239C19.4075 22.4036 18.4474 22.7867 17.4584 22.9318C17.1485 22.9773 16.8387 23 16.53 23Z" fill="#787878"/>
+                  </svg>
+                  <input type="tel" class="tour-booking__input" id="tourPhone" placeholder="+996 ___ ___ ___">
+                </div>
+              </div>
+              <div class="tour-booking__field">
+                <label class="tour-booking__label" for="tourName">Как к Вам обращаться?</label>
+                <div class="tour-booking__input-wrap">
+                  <svg class="tour-booking__icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="6" r="4" stroke="#787878" stroke-width="1.5"/>
+                    <path d="M2 18c0-4 3.582-7 8-7s8 3 8 7" stroke="#787878" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <input type="text" class="tour-booking__input" id="tourName" placeholder="Ваше имя">
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="tour-booking__btn">Забронировать</button>
+          </form>
+        </div>
+      </section>
+
+      <span class="error-text">Введите номер</span>
+
+    </main>
+
+    <!-- Модалка характеристик квадроцикла -->
+    <div class="vehicle-modal" id="vehicleModal">
+      <div class="vehicle-modal__content">
+        <button class="vehicle-modal__close" id="vehicleModalClose">✕</button>
+        <div class="vehicle-modal__specs" id="vehicleModalSpecs"></div>
+      </div>
+    </div>
+
+    <script src="./assets/js/tour.js"></script>
+  </body>
+</html>
